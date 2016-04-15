@@ -12,18 +12,17 @@ $(document).ready(function () {
 				console.log(data);
 				displayResults(data);
 			});
-
+		$('#searchInput').val('');
 	});
 
 	var displayResults = function(resluts) {
 		var html = "";
+		var source = $('#resultTemplate').html();
+		var template = Handlebars.compile(source);
 		$.each(resluts.items, function(index, value) {
-			html += '<p class="videoTitle">' + value.snippet.title + 
-				'</p><a href="https://www.youtube.com/watch?v=' + 
-				value.id.videoId + '"><img class="thumbnails" src="' + 
-				value.snippet.thumbnails.high.url + '"/></a>';
-			// html += '<img src="' + value.snippet.thumbnails.default.url + '">';
+			html += template(value);
 		});
+		
 		$('#searchResults').html(html);
 	};
 
