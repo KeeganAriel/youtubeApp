@@ -2,17 +2,131 @@
   box-sizing: border-box;
 }
 
+.top, .bottom, .left, .right {
+  background: #cd2626;
+  position: fixed;
+}
+
+.left, .right {
+    top: 0; bottom: 0;
+    width: 1em;
+}
+.left { 
+  left: 0; 
+}
+
+.right { 
+  right: 0; 
+}
+    
+.top, .bottom {
+  left: 0; right: 0;
+  height: 1em;
+  }
+
+.top { 
+  top: 0; 
+}
+.bottom { 
+  bottom: 0; 
+}
+
 .logo {
   display: flex;
   justify-content: center;
-  margin:auto;
-  width: 50%;
-  height: 50%;
+  margin-top: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0em;
+  width: 25%;
+  height: auto;
 
 }
 
 #userSearch {
   display: flex;
   justify-content: center;
+  margin: auto;
+  padding-top: 4em;
 
+}
+
+
+.form-control {
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.form-control:focus {
+  border-color: #cd2626 !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+    outline: 0 none !important;
+}
+
+#searchInput {
+  margin-right: 2em;
+  width: 30em;
+}
+
+#searchInput:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+#submitInput {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+  border-color: #cd2626 !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+    outline: 0 none !important;
+    background-color: rgba(229, 103, 23, 0.075) !important;
+}
+
+button:hover {
+   background-color: rgba(229, 103, 23, 0.075) !important;
+}
+
+
+.videoTitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  padding-top: 4em;
+  padding-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+/*  margin-bottom: 10em;* only at bottom/*/
+}
+
+/*.thumbnails :after {
+  margin-bottom: 10em;
+  }*/
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+}
+
+#gitIcon {
+  color: #cd2626;
+}
+
+#infoIcon {
+  color: #cd2626;
+}
+
+.footer {
+  height: 8em;
 }
