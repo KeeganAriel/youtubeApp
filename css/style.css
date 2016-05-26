@@ -38,7 +38,14 @@
   display: flex;
   justify-content: center;
   margin: 8em auto 0 auto;
+<<<<<<< HEAD
   width: 40%;
+=======
+ /* margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;*/
+  width: 15em;
+>>>>>>> master
   height: auto;
   max-width: 25%;
   min-width: 10%;
@@ -89,7 +96,7 @@
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0 !important;
-  margin-left: -11%;
+  margin-left: -15%;
 }
 
 .form-group {
@@ -99,9 +106,9 @@
 
 button:focus {
   border-color: #cd2626 !important;
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+  box-shadow: 0 1px 1px rgba(91, 49, 75, 1) inset, 0 0 8px rgba(91, 49, 75, 1) !important;
   outline: 0 none !important;
-  background-color: rgba(229, 103, 23, 0.075) !important;
+  background-color: rgbargba(91, 49, 75, 1) !important;
 }
 
 button:hover {
