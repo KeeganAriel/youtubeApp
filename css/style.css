@@ -38,17 +38,7 @@
   display: flex;
   justify-content: center;
   margin: 8em auto 0 auto;
-<<<<<<< HEAD
-  width: 40%;
-=======
- /* margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;*/
-  width: 15em;
->>>>>>> master
   height: auto;
-  max-width: 25%;
-  min-width: 10%;
 
 }
 
@@ -85,7 +75,6 @@
 
 #searchInput {
   width: 75%;
-  /*  margin-right: auto;*/
 }
 
 #searchInput:-webkit-autofill {
@@ -106,13 +95,13 @@
 
 button:focus {
   border-color: #cd2626 !important;
-  box-shadow: 0 1px 1px rgba(91, 49, 75, 1) inset, 0 0 8px rgba(91, 49, 75, 1) !important;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
   outline: 0 none !important;
-  background-color: rgbargba(91, 49, 75, 1) !important;
+  background-color: rgba(229, 103, 23, 0.075) !important;
 }
 
 button:hover {
- background-color: rgba(229, 103, 23, 0.075) !important;
+ background-color: rgba(229, 103, 23, 0.6) !important;
 }
 
 
